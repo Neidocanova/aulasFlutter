@@ -1,0 +1,34 @@
+//usando ícone com a variável
+import 'package:flutter/material.dart';
+
+void main() {
+  //const bigRedStyle = TextStyle(color: Colors.red, fontSize: 24);
+  const myIcon=Icon(Icons.check,
+                   color: Colors.orange,
+                   size: 80.0);
+    
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+        body: myIcon)
+      )
+    
+  );
+}
+//Colocando icone no lugar o texto
+import 'package:flutter/material.dart';
+
+void main() {
+  //const bigRedStyle = TextStyle(color: Colors.red, fontSize: 24);
+  //const myIcon=Icon(Icons.check,color: Colors.orange, size: 80.0);
+    
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+        body:Icon(Icons.phone,
+      color: Colors.purple,
+      size: 80.0)
+      )
+    )
+  );
+}
