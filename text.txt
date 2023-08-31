@@ -8,3 +8,23 @@ void main() {
     )
   );
 }
+
+
+//estilo de texto
+import 'package:flutter/material.dart';
+
+void main() {
+  
+  const corTexto=TextStyle(
+  color: Colors.brown,
+  fontSize: 30);
+  
+    runApp(
+    const MaterialApp(
+      home: Scaffold(
+        body: Text('Trabalhando com estilo de letras',
+                  style: corTexto)
+      )
+    )
+  );
+}
