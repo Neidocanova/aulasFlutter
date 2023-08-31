@@ -1,0 +1,14 @@
+Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  children: [
+    Column(
+      children: <Widget>[Icon(Icons.call), Text('Call')],
+    ),
+    Column(
+      children: <Widget>[Icon(Icons.directions), Text('Route')],
+    ),
+    Column(
+      children: <Widget>[Icon(Icons.share), Text('Share')],
+    ),
+  ],
+)
