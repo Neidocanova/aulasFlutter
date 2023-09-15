@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(SuperApp());
+}
+
+class SuperApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    //Criando as variáveis locais
+    final ButtonStyle style =
+        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+    
+    return MaterialApp(
+      title: 'SuperApp',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Título da appBAr'),
+        ),
+        body: Center(
+          //Widget Pai --> opções de layout
+          child: Column(
+            //Widget Filho
+            children: <Widget>[
+              Text("Trabalhando com estilo de letras"),
+              ElevatedButton(
+                style: style,
+                onPressed: () {
+                  print("APERTEI");
+                },
+                child: const Text('APERTE AQUI'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
