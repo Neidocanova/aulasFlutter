@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(SuperApp());
+}
+
+class SuperApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'SuperApp',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Título da appBAr'),
+        ),
+        body:
+        Image.network("https://www.eusemfronteiras.com.br/wp-content/uploads/2022/09/shutterstock_1893479695-810x540.jpg", 
+                      fit: BoxFit.fill, height: 440.0, width:  400.0),
+          
+        ),
+      
+    );
+  }
+}
