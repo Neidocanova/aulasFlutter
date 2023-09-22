@@ -1,0 +1,14 @@
+TextField(
+        obscureText: false,
+        decoration: InputDecoration(
+          border: OutlineInputBorder(),
+          labelText: 'Altura',
+        ),
+      ),
+TextField(
+        obscureText: true,
+        decoration: InputDecoration(
+          border: OutlineInputBorder(),
+          labelText: 'Altura',
+        ),
+      ),
